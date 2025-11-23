@@ -36,8 +36,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel_Form = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
             this.panelPrincipal.SuspendLayout();
             this.panel_Form.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -45,6 +45,8 @@
             // 
             // panelPrincipal
             // 
+            this.panelPrincipal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panelPrincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(100)))));
             this.panelPrincipal.Controls.Add(this.btn_produtos);
             this.panelPrincipal.Controls.Add(this.btn_clientes);
@@ -148,6 +150,9 @@
             // 
             // panel_Form
             // 
+            this.panel_Form.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Form.BackColor = System.Drawing.Color.White;
             this.panel_Form.Controls.Add(this.label1);
             this.panel_Form.Controls.Add(this.pictureBox1);
@@ -192,6 +197,7 @@
             this.Name = "FRM_Principal";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FRM_Principal_Load_1);
             this.panelPrincipal.ResumeLayout(false);
             this.panel_Form.ResumeLayout(false);
