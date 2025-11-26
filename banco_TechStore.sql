@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           9.0.1 - MySQL Community Server - GPL
+-- Versão do servidor:           8.0.44 - MySQL Community Server - GPL
 -- OS do Servidor:               Win64
--- HeidiSQL Versão:              12.8.0.6908
+-- HeidiSQL Versão:              12.13.0.7147
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -27,9 +27,41 @@ CREATE TABLE IF NOT EXISTS `tb_clientes` (
   `nome` varchar(100) NOT NULL,
   `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'email não informado',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportação de dados foi desmarcado.
+-- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_clientes: ~30 rows (aproximadamente)
+DELETE FROM `tb_clientes`;
+INSERT INTO `tb_clientes` (`id`, `nome`, `email`) VALUES
+	(7, 'João Silva', 'joao.silva@email.com'),
+	(8, 'Maria Oliveira', 'maria.oliveira@email.com'),
+	(9, 'Carlos Souza', 'carlos.souza@email.com'),
+	(10, 'Fernanda Lima', 'fernanda.lima@email.com'),
+	(11, 'Lucas Pereira', 'lucas.pereira@email.com'),
+	(12, 'Ana Costa', 'ana.costa@email.com'),
+	(13, 'Roberto Santos', 'roberto.santos@email.com'),
+	(14, 'Juliana Almeida', 'juliana.almeida@email.com'),
+	(15, 'Rafael Martins', 'rafael.martins@email.com'),
+	(16, 'Patrícia Lima', 'patricia.lima@email.com'),
+	(17, 'João Silva', 'joao.silva@email.com'),
+	(18, 'Maria Oliveira', 'maria.oliveira@email.com'),
+	(19, 'Carlos Souza', 'carlos.souza@email.com'),
+	(20, 'Fernanda Lima', 'fernanda.lima@email.com'),
+	(21, 'Lucas Pereira', 'lucas.pereira@email.com'),
+	(22, 'Ana Costa', 'ana.costa@email.com'),
+	(23, 'Roberto Santos', 'roberto.santos@email.com'),
+	(24, 'Juliana Almeida', 'juliana.almeida@email.com'),
+	(25, 'Rafael Martins', 'rafael.martins@email.com'),
+	(26, 'Patrícia Lima', 'patricia.lima@email.com'),
+	(27, 'João Silva', 'joao.silva@email.com'),
+	(28, 'Maria Oliveira', 'maria.oliveira@email.com'),
+	(29, 'Carlos Souza', 'carlos.souza@email.com'),
+	(30, 'Fernanda Lima', 'fernanda.lima@email.com'),
+	(31, 'Lucas Pereira', 'lucas.pereira@email.com'),
+	(32, 'Ana Costa', 'ana.costa@email.com'),
+	(33, 'Roberto Santos', 'roberto.santos@email.com'),
+	(34, 'Juliana Almeida', 'juliana.almeida@email.com'),
+	(35, 'Rafael Martins', 'rafael.martins@email.com'),
+	(36, 'Patrícia Lima', 'patricia.lima@email.com');
 
 -- Copiando estrutura para tabela db_projetoengenhariadesoftware.tb_produtos
 DROP TABLE IF EXISTS `tb_produtos`;
@@ -38,9 +70,56 @@ CREATE TABLE IF NOT EXISTS `tb_produtos` (
   `nome` varchar(100) NOT NULL,
   `preco` decimal(10,2) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportação de dados foi desmarcado.
+-- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_produtos: ~1 rows (aproximadamente)
+DELETE FROM `tb_produtos`;
+INSERT INTO `tb_produtos` (`id`, `nome`, `preco`) VALUES
+	(6, 'Notebook Dell Inspiron 15', 3500.00),
+	(7, 'Smartphone Samsung Galaxy S21', 4200.00),
+	(8, 'Monitor LG 27" Full HD', 1200.00),
+	(9, 'Teclado Mecânico Razer', 500.00),
+	(10, 'Mouse Logitech G Pro', 250.00),
+	(11, 'SSD Kingston 512GB', 400.00),
+	(12, 'Placa de Vídeo NVIDIA RTX 3060', 3000.00),
+	(13, 'Fone de Ouvido Bluetooth Sony', 600.00),
+	(14, 'Impressora HP LaserJet Pro', 800.00),
+	(15, 'Cadeira Gamer DXRacer', 1500.00),
+	(16, 'Mousepad XXL Corsair', 150.00),
+	(17, 'Webcam Logitech C920', 350.00),
+	(18, 'Caixa de Som JBL Flip 5', 650.00),
+	(19, 'Fonte Corsair 750W', 700.00),
+	(20, 'Memória RAM 16GB Corsair', 600.00),
+	(21, 'Notebook Dell Inspiron 15', 3500.00),
+	(22, 'Smartphone Samsung Galaxy S21', 4200.00),
+	(23, 'Monitor LG 27" Full HD', 1200.00),
+	(24, 'Teclado Mecânico Razer', 500.00),
+	(25, 'Mouse Logitech G Pro', 250.00),
+	(26, 'SSD Kingston 512GB', 400.00),
+	(27, 'Placa de Vídeo NVIDIA RTX 3060', 3000.00),
+	(28, 'Fone de Ouvido Bluetooth Sony', 600.00),
+	(29, 'Impressora HP LaserJet Pro', 800.00),
+	(30, 'Cadeira Gamer DXRacer', 1500.00),
+	(31, 'Mousepad XXL Corsair', 150.00),
+	(32, 'Webcam Logitech C920', 350.00),
+	(33, 'Caixa de Som JBL Flip 5', 650.00),
+	(34, 'Fonte Corsair 750W', 700.00),
+	(35, 'Memória RAM 16GB Corsair', 600.00),
+	(36, 'Notebook Dell Inspiron 15', 3500.00),
+	(37, 'Smartphone Samsung Galaxy S21', 4200.00),
+	(38, 'Monitor LG 27" Full HD', 1200.00),
+	(39, 'Teclado Mecânico Razer', 500.00),
+	(40, 'Mouse Logitech G Pro', 250.00),
+	(41, 'SSD Kingston 512GB', 400.00),
+	(42, 'Placa de Vídeo NVIDIA RTX 3060', 3000.00),
+	(43, 'Fone de Ouvido Bluetooth Sony', 600.00),
+	(44, 'Impressora HP LaserJet Pro', 800.00),
+	(45, 'Cadeira Gamer DXRacer', 1500.00),
+	(46, 'Mousepad XXL Corsair', 150.00),
+	(47, 'Webcam Logitech C920', 350.00),
+	(48, 'Caixa de Som JBL Flip 5', 650.00),
+	(49, 'Fonte Corsair 750W', 700.00),
+	(50, 'Memória RAM 16GB Corsair', 600.00);
 
 -- Copiando estrutura para tabela db_projetoengenhariadesoftware.tb_vendas
 DROP TABLE IF EXISTS `tb_vendas`;
@@ -55,9 +134,27 @@ CREATE TABLE IF NOT EXISTS `tb_vendas` (
   KEY `FK__tb_produtos` (`ID_Produto`),
   CONSTRAINT `FK__tb_clientes` FOREIGN KEY (`ID_Cliente`) REFERENCES `tb_clientes` (`id`),
   CONSTRAINT `FK__tb_produtos` FOREIGN KEY (`ID_Produto`) REFERENCES `tb_produtos` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=85 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Exportação de dados foi desmarcado.
+-- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_vendas: ~16 rows (aproximadamente)
+DELETE FROM `tb_vendas`;
+INSERT INTO `tb_vendas` (`id`, `ID_Cliente`, `ID_Produto`, `quantidade`, `dataVenda`) VALUES
+	(69, 18, 8, 1, '2025-02-02'),
+	(70, 9, 9, 1, '2023-11-03'),
+	(71, 10, 10, 1, '2023-11-04'),
+	(72, 11, 11, 3, '2023-11-05'),
+	(73, 12, 12, 1, '2023-11-06'),
+	(74, 13, 13, 2, '2023-11-07'),
+	(75, 14, 14, 1, '2023-11-08'),
+	(76, 15, 15, 1, '2023-11-09'),
+	(77, 16, 16, 1, '2023-11-10'),
+	(78, 17, 17, 2, '2023-11-11'),
+	(79, 18, 18, 1, '2023-11-12'),
+	(80, 19, 19, 1, '2023-11-13'),
+	(81, 20, 20, 1, '2023-11-14'),
+	(82, 21, 21, 1, '2023-11-15'),
+	(83, 22, 19, 1, '2025-02-02'),
+	(84, 11, 8, 1, '2025-02-02');
 
 /*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
