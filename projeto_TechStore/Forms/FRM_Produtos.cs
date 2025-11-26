@@ -60,7 +60,7 @@ namespace projeto_TechStore
 
             if (!(string.IsNullOrWhiteSpace(txt_id.Text)))
             {
-                DialogResult result = MessageBox.Show("Tem certeza que deseja excluir o produto?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult result = MessageBox.Show("Tem certeza que deseja excluir o produto?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
                 if (result == DialogResult.Yes)
                 {

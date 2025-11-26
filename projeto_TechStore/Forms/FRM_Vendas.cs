@@ -30,11 +30,6 @@ namespace projeto_TechStore
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
@@ -131,11 +126,6 @@ namespace projeto_TechStore
             {
                 MessageBox.Show("Insira o ID da venda a ser excluida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void label3_Click_1(object sender, EventArgs e)
-        {
-
         }
 
         private void textBox4_TextChanged(object sender, EventArgs e)

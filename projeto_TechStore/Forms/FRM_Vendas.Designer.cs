@@ -215,7 +215,6 @@
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 24;
             this.label3.Text = "Data da Venda:";
-            this.label3.Click += new System.EventHandler(this.label3_Click_1);
             // 
             // btn_listar
             // 
