@@ -50,16 +50,33 @@ namespace projeto_TechStore.Forms
         {
             Clientes tar = new Clientes();
             IClientes itar = new DAL_Clientes();
-            if (string.IsNullOrWhiteSpace(txt_id.Text))
+            bool a = Isnull();
+            if (string.IsNullOrWhiteSpace(txt_id.Text) && a)
             {
                 tar.nome = txt_nome.Text;
                 tar.email = txt_email.Text;
                 itar.Inserir_Clientes(tar);
                 LimparCampos();
             }
-            else
+            else if (!string.IsNullOrWhiteSpace(txt_id.Text))
             {
                 MessageBox.Show("O campo ID só é usado para o método Editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!a)
+            {
+                MessageBox.Show("Insira dados para completar a operação", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool Isnull()
+        {
+            if (string.IsNullOrEmpty(txt_nome.Text) && string.IsNullOrEmpty(txt_email.Text))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 

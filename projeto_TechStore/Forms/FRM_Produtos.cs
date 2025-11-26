@@ -90,17 +90,33 @@ namespace projeto_TechStore
         {
             Produtos produto = new Produtos();
             IProdutos dal_produtos = new DAL_Produtos();
-            if (string.IsNullOrWhiteSpace(txt_id.Text))
+            bool a = Isnull();
+            if (string.IsNullOrWhiteSpace(txt_id.Text) && a)
             {
                 produto.nome = txt_nome.Text;
                 produto.preco = decimal.Parse(txt_preco.Text);
                 dal_produtos.Inserir_Produto(produto);
                 LimparCampos();
             }
+            else if (!string.IsNullOrWhiteSpace(txt_id.Text))
+            {
+                MessageBox.Show("O campo ID só é usado para o método Editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!a)
+            {
+                MessageBox.Show("Insira dados para completar a operação", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool Isnull()
+        {
+            if (string.IsNullOrEmpty(txt_nome.Text) && string.IsNullOrEmpty(txt_preco.Text))
+            {
+                return false;
+            }
             else
             {
-                MessageBox.Show("O campo Id só é usado para o metodo Editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                return true;
             }
         }
 

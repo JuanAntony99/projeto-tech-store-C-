@@ -44,7 +44,8 @@ namespace projeto_TechStore
         {
             Vendas tar = new Vendas();
             IVendas itar = new DAL_Vendas();
-            if (string.IsNullOrWhiteSpace(txt_id.Text))
+            bool a = Isnull();
+            if (string.IsNullOrWhiteSpace(txt_id.Text) && a)
             {
                 tar.ID_Cliente = int.Parse(txt_idcliente.Text);
                 tar.ID_Produto = int.Parse(txt_idproduto.Text);
@@ -54,10 +55,25 @@ namespace projeto_TechStore
                 itar.Inserir_Vendas(tar);
                 LimparCampos();
             }
+            else if (!string.IsNullOrWhiteSpace(txt_id.Text))
+            {
+                MessageBox.Show("O campo ID só é usado para o método Editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (!a)
+            {
+                MessageBox.Show("Insira dados para completar a operação", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private bool Isnull()
+        {
+            if (string.IsNullOrEmpty(txt_idcliente.Text) && string.IsNullOrEmpty(txt_idproduto.Text) && string.IsNullOrEmpty(txt_quantidade.Text) && string.IsNullOrEmpty(txt_dataVenda.Text))
+            {
+                return false;
+            }
             else
             {
-                MessageBox.Show("O campo Id só é usado para o metodo Editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
+                return true;
             }
         }
 
