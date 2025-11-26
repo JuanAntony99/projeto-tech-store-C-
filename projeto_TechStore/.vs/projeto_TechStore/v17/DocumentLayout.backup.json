@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|c:\\users\\juan antony\\desktop\\projeto_techstore\\projeto_techstore\\forms\\frm_vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|solutionrelative:forms\\frm_vendas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|c:\\users\\juan antony\\desktop\\projeto_techstore\\projeto_techstore\\forms\\frm_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|solutionrelative:forms\\frm_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|c:\\users\\juan antony\\desktop\\projeto_techstore\\projeto_techstore\\forms\\frm_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|solutionrelative:forms\\frm_clientes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|c:\\users\\juan antony\\desktop\\projeto_techstore\\projeto_techstore\\forms\\frm_clientesselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E990D1E5-4691-40A1-BCED-9FFA1BBE160A}|projeto_TechStore.csproj|solutionrelative:forms\\frm_clientesselect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -51,38 +51,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FRM_Vendas.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Vendas.cs",
-              "RelativeDocumentMoniker": "Forms\\FRM_Vendas.cs",
-              "ToolTip": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Vendas.cs [Design]",
-              "RelativeToolTip": "Forms\\FRM_Vendas.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T21:55:09.515Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "FRM_Clientes.cs",
               "DocumentMoniker": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Clientes.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Clientes.cs",
               "ToolTip": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Clientes.cs",
               "RelativeToolTip": "Forms\\FRM_Clientes.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwEIAAAB/AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwC8AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T21:53:41.149Z",
+              "WhenOpened": "2025-11-26T22:27:21.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FRM_ClientesSelect.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_ClientesSelect.cs",
+              "RelativeDocumentMoniker": "Forms\\FRM_ClientesSelect.cs",
+              "ToolTip": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_ClientesSelect.cs [Design]",
+              "RelativeToolTip": "Forms\\FRM_ClientesSelect.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-26T22:23:24.137Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FRM_Clientes.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Clientes.cs",
               "RelativeDocumentMoniker": "Forms\\FRM_Clientes.cs",
               "ToolTip": "C:\\Users\\Juan Antony\\Desktop\\projeto_TechStore\\projeto_TechStore\\Forms\\FRM_Clientes.cs [Design]",
               "RelativeToolTip": "Forms\\FRM_Clientes.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T21:53:39.776Z",
+              "WhenOpened": "2025-11-26T22:23:14.953Z",
               "EditorCaption": " [Design]"
             }
           ]

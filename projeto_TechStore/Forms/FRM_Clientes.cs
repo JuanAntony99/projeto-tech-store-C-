@@ -36,9 +36,15 @@ namespace projeto_TechStore.Forms
         private void btn_excluir_Click(object sender, EventArgs e)
         {
             IClientes itar = new DAL_Clientes();
+
             if (!(string.IsNullOrWhiteSpace(txt_id.Text)))
             {
-                itar.Deletar_Clientes(int.Parse(txt_id.Text));
+                DialogResult result = MessageBox.Show("Tem certeza que deseja excluir o cliente?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if ((result == DialogResult.Yes))
+                {
+                    itar.Deletar_Clientes(int.Parse(txt_id.Text));
+                }
             }
             else
             {

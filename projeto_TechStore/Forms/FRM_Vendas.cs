@@ -109,7 +109,7 @@ namespace projeto_TechStore
             }
             else
             {
-                MessageBox.Show("Insira o id da cartegoria a ser editado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Insira o ID da cartegoria a ser editado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
         }
@@ -117,13 +117,19 @@ namespace projeto_TechStore
         private void btn_excluir_Click(object sender, EventArgs e)
         {
             IVendas itar = new DAL_Vendas();
+
             if (!(string.IsNullOrWhiteSpace(txt_id.Text)))
             {
-                itar.Deletar_Vendas(int.Parse(txt_id.Text));
+                DialogResult result = MessageBox.Show("Tem certeza que deseja excluir a venda?", "Confirmar Exclusão", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    itar.Deletar_Vendas(int.Parse(txt_id.Text));
+                }
             }
             else
             {
-                MessageBox.Show("Insira o id da venda a ser excluida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Insira o ID da venda a ser excluida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
