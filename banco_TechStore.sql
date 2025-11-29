@@ -1,8 +1,8 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           8.0.44 - MySQL Community Server - GPL
+-- Versão do servidor:           9.3.0 - MySQL Community Server - GPL
 -- OS do Servidor:               Win64
--- HeidiSQL Versão:              12.13.0.7147
+-- HeidiSQL Versão:              12.11.0.7065
 -- --------------------------------------------------------
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -16,55 +16,55 @@
 
 
 -- Copiando estrutura do banco de dados para db_projetoengenhariadesoftware
-DROP DATABASE IF EXISTS `db_projetoengenhariadesoftware`;
 CREATE DATABASE IF NOT EXISTS `db_projetoengenhariadesoftware` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `db_projetoengenhariadesoftware`;
 
 -- Copiando estrutura para tabela db_projetoengenhariadesoftware.tb_clientes
-DROP TABLE IF EXISTS `tb_clientes`;
 CREATE TABLE IF NOT EXISTS `tb_clientes` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
   `email` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT 'email não informado',
+  `telefone` varchar(15) NOT NULL DEFAULT '0',
+  `cpf` varchar(15) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=37 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_clientes: ~30 rows (aproximadamente)
 DELETE FROM `tb_clientes`;
-INSERT INTO `tb_clientes` (`id`, `nome`, `email`) VALUES
-	(7, 'João Silva', 'joao.silva@email.com'),
-	(8, 'Maria Oliveira', 'maria.oliveira@email.com'),
-	(9, 'Carlos Souza', 'carlos.souza@email.com'),
-	(10, 'Fernanda Lima', 'fernanda.lima@email.com'),
-	(11, 'Lucas Pereira', 'lucas.pereira@email.com'),
-	(12, 'Ana Costa', 'ana.costa@email.com'),
-	(13, 'Roberto Santos', 'roberto.santos@email.com'),
-	(14, 'Juliana Almeida', 'juliana.almeida@email.com'),
-	(15, 'Rafael Martins', 'rafael.martins@email.com'),
-	(16, 'Patrícia Lima', 'patricia.lima@email.com'),
-	(17, 'João Silva', 'joao.silva@email.com'),
-	(18, 'Maria Oliveira', 'maria.oliveira@email.com'),
-	(19, 'Carlos Souza', 'carlos.souza@email.com'),
-	(20, 'Fernanda Lima', 'fernanda.lima@email.com'),
-	(21, 'Lucas Pereira', 'lucas.pereira@email.com'),
-	(22, 'Ana Costa', 'ana.costa@email.com'),
-	(23, 'Roberto Santos', 'roberto.santos@email.com'),
-	(24, 'Juliana Almeida', 'juliana.almeida@email.com'),
-	(25, 'Rafael Martins', 'rafael.martins@email.com'),
-	(26, 'Patrícia Lima', 'patricia.lima@email.com'),
-	(27, 'João Silva', 'joao.silva@email.com'),
-	(28, 'Maria Oliveira', 'maria.oliveira@email.com'),
-	(29, 'Carlos Souza', 'carlos.souza@email.com'),
-	(30, 'Fernanda Lima', 'fernanda.lima@email.com'),
-	(31, 'Lucas Pereira', 'lucas.pereira@email.com'),
-	(32, 'Ana Costa', 'ana.costa@email.com'),
-	(33, 'Roberto Santos', 'roberto.santos@email.com'),
-	(34, 'Juliana Almeida', 'juliana.almeida@email.com'),
-	(35, 'Rafael Martins', 'rafael.martins@email.com'),
-	(36, 'Patrícia Lima', 'patricia.lima@email.com');
+INSERT INTO `tb_clientes` (`id`, `nome`, `email`, `telefone`, `cpf`) VALUES
+	(7, 'João Silva', 'joao.silva@email.com', '0', '0'),
+	(8, 'Maria Oliveira', 'maria.oliveira@email.com', '0', '0'),
+	(9, 'Carlos Souza', 'carlos.souza@email.com', '0', '0'),
+	(10, 'Fernanda Lima', 'fernanda.lima@email.com', '0', '0'),
+	(11, 'Lucas Pereira', 'lucas.pereira@email.com', '0', '0'),
+	(12, 'Ana Costa', 'ana.costa@email.com', '0', '0'),
+	(13, 'Roberto Santos', 'roberto.santos@email.com', '0', '0'),
+	(14, 'Juliana Almeida', 'juliana.almeida@email.com', '0', '0'),
+	(15, 'Rafael Martins', 'rafael.martins@email.com', '0', '0'),
+	(16, 'Patrícia Lima', 'patricia.lima@email.com', '0', '0'),
+	(17, 'João Silva', 'joao.silva@email.com', '0', '0'),
+	(18, 'Maria Oliveira', 'maria.oliveira@email.com', '0', '0'),
+	(19, 'Carlos Souza', 'carlos.souza@email.com', '0', '0'),
+	(20, 'Fernanda Lima', 'fernanda.lima@email.com', '0', '0'),
+	(21, 'Lucas Pereira', 'lucas.pereira@email.com', '0', '0'),
+	(22, 'Ana Costa', 'ana.costa@email.com', '0', '0'),
+	(23, 'Roberto Santos', 'roberto.santos@email.com', '0', '0'),
+	(24, 'Juliana Almeida', 'juliana.almeida@email.com', '0', '0'),
+	(25, 'Rafael Martins', 'rafael.martins@email.com', '0', '0'),
+	(26, 'Patrícia Lima', 'patricia.lima@email.com', '0', '0'),
+	(27, 'João Silva', 'joao.silva@email.com', '0', '0'),
+	(28, 'Maria Oliveira', 'maria.oliveira@email.com', '0', '0'),
+	(29, 'Carlos Souza', 'carlos.souza@email.com', '0', '0'),
+	(30, 'Fernanda Lima', 'fernanda.lima@email.com', '0', '0'),
+	(31, 'Lucas Pereira', 'lucas.pereira@email.com', '0', '0'),
+	(32, 'Ana Costa', 'ana.costa@email.com', '0', '0'),
+	(33, 'Roberto Santos', 'roberto.santos@email.com', '0', '0'),
+	(34, 'Juliana Almeida', 'juliana.almeida@email.com', '0', '0'),
+	(35, 'Rafael Martins', 'rafael.martins@email.com', '0', '0'),
+	(36, 'Patrícia Lima', 'patricia.lima@email.com', '0', '0'),
+	(38, 'Juan Antony', 'juan@email.com', '(83) 988776655', '123.123.123-45');
 
 -- Copiando estrutura para tabela db_projetoengenhariadesoftware.tb_produtos
-DROP TABLE IF EXISTS `tb_produtos`;
 CREATE TABLE IF NOT EXISTS `tb_produtos` (
   `id` int NOT NULL AUTO_INCREMENT,
   `nome` varchar(100) NOT NULL,
@@ -72,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `tb_produtos` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=51 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_produtos: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela db_projetoengenhariadesoftware.tb_produtos: ~45 rows (aproximadamente)
 DELETE FROM `tb_produtos`;
 INSERT INTO `tb_produtos` (`id`, `nome`, `preco`) VALUES
 	(6, 'Notebook Dell Inspiron 15', 3500.00),
@@ -122,7 +122,6 @@ INSERT INTO `tb_produtos` (`id`, `nome`, `preco`) VALUES
 	(50, 'Memória RAM 16GB Corsair', 600.00);
 
 -- Copiando estrutura para tabela db_projetoengenhariadesoftware.tb_vendas
-DROP TABLE IF EXISTS `tb_vendas`;
 CREATE TABLE IF NOT EXISTS `tb_vendas` (
   `id` int NOT NULL AUTO_INCREMENT,
   `ID_Cliente` int NOT NULL DEFAULT '0',
